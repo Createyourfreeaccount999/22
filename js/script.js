@@ -58,8 +58,8 @@ new Vue({
       if (card.columnId !== 'done') return '';
       const now = new Date();
       const d = new Date(card.deadline);
-      if (isNaN(d)) return '❌ Некорректная дата';
-      return d < now ? '❌ Просрочено' : '✅ Выполнено в срок';
+      if (isNaN(d)) return 'Некорректная дата';
+      return d < now ? 'Просрочено' : 'Выполнено в срок';
     },
     getStatusColor(card) {
       if (card.columnId !== 'done') return '';
